@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { exampleUpdate } from '../ducks/example';
 
+/* Think of this Home component as your main content. If you add new routes,
+their content will replace what you see here (when you navigate to them).  */
 
 class Home extends Component {
   constructor(props) {
