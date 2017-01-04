@@ -13,7 +13,7 @@ class Home extends Component {
 
     return (
       <div>
-        <h2>Here is the Home Page!</h2>
+        <h2>Template Ready.</h2>
         <p>Add new pages using react-router, change the Redux state, and make this app your own!</p>
         <p>CURRENT STATE: { example }</p>
         <button onClick={this.props.update}>Update</button>
