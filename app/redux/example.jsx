@@ -1,24 +1,23 @@
 /* -----------------    ACTIONS     ------------------ */
-const UPDATE = 'UPDATE'
-const CLEAR = 'CLEAR'
+const UPDATE = 'UPDATE';
 
 /* ------------   ACTION CREATORS     ----------------- */
 
 export const exampleUpdate = () => ({
-  type: UPDATE
-})
+  type: UPDATE,
+});
 
 /* -------------       REDUCER     ------------------- */
 
 const reducer = (state = 'you have not clicked udpate.', action) => {
-  switch (action.type){
+  switch (action.type) {
     case UPDATE:
-        return 'you clicked update!'
+      return 'you clicked update!';
 
     default:
-        return state;
-    }
+      return state;
+  }
 };
 
 
-export default reducer
+export default reducer;
