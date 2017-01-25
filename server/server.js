@@ -20,7 +20,7 @@ app.get('/', (req, res) => res.sendFile(resolve(__dirname, '../index.html')));
 app.get('/home', (req, res) => res.sendFile(resolve(__dirname, '../index.html')));
 
 // error handling
-app.use((err, req, res) => {
+app.use((err, req, res, next) => {
   res.status(err.status || 500).send(err.message || 'Internal server error.');
 });
 
